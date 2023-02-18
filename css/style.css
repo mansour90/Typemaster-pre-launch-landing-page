@@ -1,0 +1,242 @@
+/* Variables Start */
+:root {
+  /* Colors */
+  --light-orange: #ff9b62;
+  --orange: #f16718;
+  --light-blue: #7b8bad;
+  --dark-blue: #162542;
+  --light-grey: #e8eff2;
+  --white: #fff;
+
+  /* Typography */
+  --fs-xxl: 5.6rem;
+  --fs-xl: 3.2rem;
+  --fs-l: 2.4rem;
+  --fs-m: 1.8rem;
+  --fs-s: 1.6rem;
+  --fs-xs: 1.4rem;
+
+  /* Font Family */
+  --main-ff: 'Barlow', sans-serif;
+
+  /* Line Height */
+  --lh-xl: 5.6rem;
+  --lh-l: 3.6rem;
+  --lh-m: 2.8rem;
+  --lh-s: 2.6rem;
+
+  /* Font Weight */
+  --fw-medium: 500;
+  --fw-large: 700;
+  --fw-black: 900;
+}
+/* Variables End */
+
+/* Helper Classes */
+.container-mobile {
+  padding-inline: 2.4rem;
+  margin-inline: auto;
+}
+
+.container-tablet {
+  padding-inline: 3.9rem;
+  margin-inline: auto;
+}
+
+.container-desktop {
+  margin-inline: auto;
+  max-width: 111rem;
+}
+
+/* Headings */
+.h1 {
+  font-family: var(--main-ff);
+  text-transform: uppercase;
+  font-size: var(--fs-xxl);
+  font-weight: var(--fw-black);
+  line-height: var(--lh-xl);
+  color: var(--dark-blue);
+  margin: 0;
+}
+
+.h2 {
+  font-family: var(--main-ff);
+  text-transform: uppercase;
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-black);
+  line-height: var(--lh-l);
+  color: var(--dark-blue);
+  margin: 0;
+}
+
+.h3 {
+  font-family: var(--main-ff);
+  text-transform: uppercase;
+  font-size: var(--fs-l);
+  font-weight: var(--fw-black);
+  line-height: var(--lh-m);
+  color: var(--dark-blue);
+  margin: 0;
+}
+
+/* Body Sizes */
+.body-s {
+  font-family: var(--main-ff);
+  font-size: var(--fs-s);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-s);
+  color: var(--light-blue);
+}
+
+.body-m {
+  font-family: var(--main-ff);
+  font-size: var(--fs-m);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-s);
+  color: var(--light-blue);
+}
+
+.strong-text {
+  font-family: var(--main-ff);
+  font-size: var(--fs-m);
+  font-weight: var(--fw-large);
+  line-height: var(--lh-s);
+  color: var(--light-blue);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.strong-text:hover {
+  color: var(--dark-blue);
+}
+
+/* Buttons */
+.btn {
+  width: 15.1rem;
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-large);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Orange Btn */
+.btn-orange {
+  background-color: var(--orange);
+  color: var(--white);
+}
+/* Hover Orange Btn */
+.btn-orange:hover {
+  background-color: var(--light-orange);
+  color: var(--white);
+}
+/* Grey Btn */
+.btn-grey {
+  background-color: var(--light-grey);
+  color: var(--dark-blue);
+}
+/* Hover Grey Btn */
+.btn-grey:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+/* Reset Start*/
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: var(--main-ff);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+/* Reset End*/
+
+/* Main file style Start */
+body {
+  font-family: var(--main-ff);
+  font-size: 1.6rem;
+}
+/* Main file style End */
+
+/* Navigation Start */
+.navigation {
+  width: 100%;
+  padding-block: 2.3rem;
+}
+
+.navigation > .container-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Navigation End */
+
+/* Header Section Start */
+.header-info-section {
+  padding-block: 5rem 3.9rem;
+  /* background-color: rebeccapurple; */
+}
+
+.h1 {
+  font-size: 4.8rem;
+  margin-bottom: 3.5rem;
+}
+
+.sub-heading {
+  margin-bottom: 3.9rem;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 3.2rem;
+}
+
+.header-image-section {
+  /* background-color: #ff9b62; */
+  padding-left: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.img-box {
+  margin-top: 2.5rem;
+  background-image: url(../assets/mobile/image-keyboard.jpg);
+  height: 33.1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  overflow: hidden;
+}
+/* Header Section End */
