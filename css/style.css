@@ -110,6 +110,12 @@
   color: var(--dark-blue);
 }
 
+.special {
+  font-weight: var(--fw-large);
+  color: var(--light-blue);
+  font-size: var(--fs-s);
+}
+
 /* Buttons */
 .btn {
   width: 15.1rem;
@@ -240,3 +246,111 @@ body {
   overflow: hidden;
 }
 /* Header Section End */
+
+/* Section Image Start */
+.section-images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2.4rem;
+  height: 19.3rem;
+  overflow: hidden;
+}
+
+.image1 {
+  background-color: var(--orange);
+  background-image: url(../assets/mobile/image-phone-and-keyboard.jpg);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  width: 12.9rem;
+  height: 19.3rem;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-radius: 2rem;
+  position: relative;
+  left: -2.2rem;
+}
+
+.image2 {
+  background-image: url(../assets/mobile/image-glass-and-keyboard.jpg);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  width: 22rem;
+  height: 19.3rem;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+/* Section Image End */
+
+/* Info Section Start */
+.section-info {
+  padding-block: 8.2rem;
+}
+.h2 {
+  text-align: center;
+  padding-inline: 2rem;
+  margin-bottom: 3.7rem;
+}
+
+.body-s {
+  text-align: center;
+}
+/* Info Section End */
+
+/* Features Section Start */
+.features-section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 3.6rem;
+  background-color: var(--white);
+  flex-direction: column;
+}
+
+.card::before {
+  width: 6.5rem;
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  background-color: var(--orange);
+  margin-bottom: 5.5rem;
+}
+
+.card1::before {
+  content: url(../assets/shared/icon-compatible.svg);
+}
+.card2::before {
+  content: url(../assets/shared/icon-bluetooth.svg);
+}
+.card3::before {
+  content: url(../assets/shared/icon-battery.svg);
+}
+.card4::before {
+  content: url(../assets/shared/icon-light.svg);
+}
+
+.card > .h3 {
+  text-align: center;
+  margin-bottom: 3.6rem;
+}
+/* Features Section End */
+
+/* Section Footer Start */
+.section-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 4.7rem
+  ;
+}
+/* Section Footer End */
