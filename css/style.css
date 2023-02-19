@@ -216,20 +216,23 @@ body {
 .h1 {
   font-size: 4.8rem;
   margin-bottom: 3.5rem;
+  padding-inline: 2.4rem;
 }
 
-.sub-heading {
+.header .header-info-section .sub-heading {
   margin-bottom: 3.9rem;
+  padding-inline: 2.4rem;
+  text-align: left;
 }
 
 .header-buttons {
   display: flex;
   align-items: center;
   column-gap: 3.2rem;
+  padding-inline: 2.4rem;
 }
 
 .header-image-section {
-  /* background-color: #ff9b62; */
   padding-left: 2.4rem;
   margin-bottom: 2rem;
 }
@@ -350,7 +353,111 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-block: 4.7rem
-  ;
+  padding-block: 4.7rem;
 }
 /* Section Footer End */
+
+/* TODO | Media Query For Tablet | Start */
+@media screen and (min-width: 768px) {
+  .navigation {
+    padding-block: 4rem;
+  }
+  .container-mobile {
+    padding-inline: 3.9rem;
+  }
+  .header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 2.2rem;
+    height: 44.8rem;
+    margin-bottom: 4rem;
+  }
+  .header-info-section {
+    height: 42.5rem;
+    padding-left: 3.9rem;
+  }
+  .header-info-section .h1 {
+    padding: 0;
+  }
+  .header-info-section p.body-s {
+    text-align: left;
+    padding: 0;
+    padding-right: 1rem;
+  }
+  .header-image-section {
+    height: 42.5rem;
+    padding-left: 6rem;
+  }
+  .header-image-section {
+    margin-bottom: 2rem;
+  }
+
+  .img-box {
+    margin: 0;
+    height: 100%;
+    background-position: left top;
+  }
+  .header-buttons {
+    padding: 0;
+  }
+  .section-images {
+    height: 32rem;
+    padding-inline: 3.9rem;
+  }
+  .image1 {
+    height: 100%;
+    position: static;
+    width: 21.4rem;
+    background-size: 150%;
+  }
+  .image2 {
+    width: 44.5rem;
+    height: 100%;
+    background-position: 0 -20px;
+  }
+  .section-info {
+    padding-block: 8rem;
+    margin-bottom: 6.1rem;
+  }
+  .info-header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    gap: 6rem;
+  }
+  .info-header .h2 {
+    padding: 0;
+    text-align: left;
+    margin: 0;
+  }
+  .info-header .body-s {
+    text-align: left;
+    font-size: var(--fs-m);
+  }
+  .feature-section > .container-mobile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: start;
+    gap: 7.9rem 6.9rem;
+    margin-bottom: 9.9rem;
+  }
+  .card::before {
+    margin-bottom: 4.5rem;
+  }
+  .card {
+    align-items: flex-start;
+    padding: 0;
+  }
+  .card > .h3 {
+    text-align: left;
+  }
+  .card > .body-s {
+    text-align: left;
+  }
+  .section-footer {
+    padding: 5rem;
+  }
+}
+/* TODO | Media Query For Tablet | End */
